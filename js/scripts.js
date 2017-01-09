@@ -14,6 +14,10 @@ var multiply = function(n1, n2) {
 	return n1 * n2;
 };
 
+var divide = function(n1, n2) {
+	return n1 / n2;
+};
+
 var subtract = function(n1, n2) {
 	return n1 - n2;
 };
@@ -21,12 +25,31 @@ var subtract = function(n1, n2) {
 var remainder = function(n1, n2) {
 	return n1 % n2;
 };
-var combineThreeStrings = function(str1, str2, str3) {
-	return "this is the new sentence " + str1 + " " + str2 + " " + str3;
+
+var calculateBMI = function(kg, m) {
+  return kg / (m * m);
 };
 
-var age = getString("Please enter your age:");
-var name = getString("Please enter your name:");
-var food = getString("Please enter your food:");
+var celsiusToFahrenheit = function( degreeC ) {
+  return (degreeC * 9) / 5 + 32;
+};
 
-saySomething(combineThreeStrings(age, name, food)); 
+// Test Section:
+/*
+saySomething("20 + 5 = " + add(20, 5));
+saySomething("20 - 5 = " + subtract(20, 5));
+saySomething("20 * 5 = " + multiply(20, 5));
+saySomething("20 / 5 = " + divide(20, 5));
+saySomething("23 % 5 = " + remainder(23, 5));
+saySomething(
+  "0 in Celsius is what in Fahrenheit: " + celsiusToFahrenheit(0)
+);
+
+*/
+
+/*
+var height = getString("Please enter your height meters:");
+var weight = getString("Please enter your weight in kilograms:");
+
+saySomething("Your BMI is " +calculateBMI(weight, height) + " sorry");
+*/
