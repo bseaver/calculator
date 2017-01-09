@@ -41,6 +41,7 @@ saySomething("20 - 5 = " + subtract(20, 5));
 saySomething("20 * 5 = " + multiply(20, 5));
 saySomething("20 / 5 = " + divide(20, 5));
 saySomething("23 % 5 = " + remainder(23, 5));
+
 saySomething(
   "0 in Celsius is what in Fahrenheit: " + celsiusToFahrenheit(0)
 );
